@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha calculdora</title>
+    <link rel="stylesheet" href="minha_calculadora.css">
+</head>
+
+<body>
+    <header>
+        <h1>Minha calculadora</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                Insira dois numeros e escolha a operação que desejas fazer:
+                <br>
+                    <div id="radiciacao"></div>
+                    <input type="number" name="num1" id="num1" class="num1">
+                    <div id="operador"></div>
+                    <input type="number" name="num2" id="num2" class="num2"><br>
+                    <p>Resposta:</p>       
+                    <div id="res"></div>
+            </p>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        <input type="button" value="+" onclick="somar()">
+                        <input type="button" value="-" onclick="subtrair()">
+                        <input type="button" value="*" onclick="multiplicar()">
+                        <input type="button" value="/" onclick="divisao()">
+                        <input type="button" value="^" onclick="potenciacao()">
+                        <input type="button" value="²√(x)" onclick="radiciacao()">
+                    </td>
+                <tr>
+                    <td>
+                        <input type="button" value="=" onclick="igual()">
+                    </td>
+                </tr>
+        </table>
+        </div>        
+               
+    </section>
+    <footer>
+        <p>&copy; Obertinho</p>
+    </footer>
+    <script src="minha_calculadora.js"></script>
+</body>
+
+</html>
